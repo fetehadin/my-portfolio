@@ -6,14 +6,14 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto w-full">
         
         {/* Top Grid: Connect text and Contact Info */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 mb-24 items-start">
           
           {/* Left Column: Heading */}
           <div className="flex flex-col items-start text-left min-w-0">
             <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
               Let's Connect
             </h5>
-            <h2 className="text-5xl font-extrabold tracking-tight text-foreground sm:text-4xl mb-2">
+            <h2 className="text-2xl sm:text-5xl md:text-4xl font-extrabold tracking-tight text-foreground mb-6 leading-tight">
               Ready to bring your <br className="hidden sm:block" />
               next <span className="font-serif italic text-primary">vision</span> to life?
             </h2>
@@ -23,27 +23,27 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Contact Details */}
-          <div className="flex flex-col items-start md:items-end justify-center gap-10 text-left md:text-right min-w-0 w-full">
+          <div className="flex flex-col items-start md:items-end justify-center gap-10 text-left md:text-right min-w-0 w-full pt-2">
             
-            <div className="flex flex-col items-start md:items-end w-full">
-              <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-3">
+            <div className="flex flex-col items-start md:items-between w-full">
+              <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-2">
                 Email
               </h5>
               <a 
                 href="mailto:fetehadinnegash@gmail.com" 
-                className="text-1xl sm:text-2xl font-bold text-foreground hover:text-primary transition-colors break-all"
+                className="text-xl sm:text-2xl font-bold text-foreground hover:text-primary transition-colors break-all"
               >
                 fetehadinnegash@gmail.com
               </a>
             </div>
             
-            <div className="flex flex-col items-start md:items-end w-full">
-              <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-3">
+            <div className="flex flex-col items-start md:items-between w-full">
+              <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-2">
                 Phone
               </h5>
               <a 
                 href="tel:+251986955964" 
-                className="text-2xl sm:text-2xl font-bold text-foreground hover:text-primary transition-colors"
+                className="text-xl sm:text-2xl font-bold text-foreground hover:text-primary transition-colors"
               >
                 +251 986 955 964
               </a>
@@ -73,13 +73,13 @@ export default function Contact() {
         </div>
 
         {/* Footer Bottom: Links and Copyright */}
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-[11px] font-bold uppercase tracking-[0.15em] text-foreground/50">
+        <div className="mt-12 flex flex-col items-center justify-center gap-6 text-[11px] font-bold uppercase tracking-[0.15em] text-foreground/50">
           <div className="flex flex-wrap justify-center gap-6">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
             <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
           </div>
-          <p className="text-center">© 2026 FETEHADIN NEGASH — CRAFTED WITH PASSION</p>
+          <p className="text-center w-full">© 2026 FETEHADIN NEGASH — CRAFTED WITH PASSION</p>
         </div>
 
       </div>

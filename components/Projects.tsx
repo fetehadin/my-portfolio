@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ExternalLink, Layers } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Projects() {
   const projects = [
@@ -49,13 +48,9 @@ export default function Projects() {
               Featured Work
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl leading-relaxed">
-              Some of my best projects and technical achievements.
+              Some of my projects and technical achievements.
             </p>
           </div>
-          
-          <a href="#" className="hidden sm:flex items-center gap-2 text-sm font-bold text-foreground hover:text-primary transition-colors">
-            View All Projects <span className="text-lg">→</span>
-          </a>
         </div>
       </div>
 
@@ -64,15 +59,25 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div 
             key={index} 
-            className="rounded-[2rem] border border-border/80 bg-card p-6 md:p-10 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md"
+            className="rounded-[2rem] border border-border/80 bg-card p-6 md:p-10 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-md flex flex-col"
           >
-            {/* Featured Tag */}
-            <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
-              Featured
-            </h4>
+            {/* Featured Tag & Title Section */}
+            <div className="mb-6">
+              <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-2">
+                Featured Project
+              </h4>
+              <h3 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
+                {project.title}
+              </h3>
+            </div>
+
+            {/* Description at the Top (Full Width for great readability) */}
+            <p className="text-lg text-foreground/75 leading-relaxed mb-8 max-w-3xl">
+              {project.description}
+            </p>
 
             {/* Project Image */}
-            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden border border-border bg-muted mb-10">
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-xl overflow-hidden border border-border bg-muted mb-8 shadow-inner">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -81,44 +86,37 @@ export default function Projects() {
               />
             </div>
 
-            {/* Project Details */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Bottom Section: Stack Pills & Live Demo Button */}
+            <div className="mt-auto pt-4 border-t border-border/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               
-              {/* Left Column: Title & Description */}
-              <div className="md:col-span-2 flex flex-col items-start text-left">
-                <h3 className="text-3xl font-bold text-foreground tracking-tight mb-4">
-                  {project.title}
-                </h3>
-                <p className="text-lg text-foreground/75 leading-relaxed">
-                  {project.description}
-                </p>
+              {/* Stack Technology Pills */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/40 mr-2">
+                  Stack:
+                </span>
+                {project.stack.map((tech, techIndex) => (
+                  <span 
+                    key={techIndex}
+                    className="rounded-full bg-muted/80 border border-border/60 px-3.5 py-1.5 text-xs font-medium text-foreground/80 shadow-2xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
 
-              {/* Right Column: Stack & Action */}
-              <div className="md:col-span-1 flex flex-col items-start text-left">
-                <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-3">
-                  Stack
-                </h5>
-                
-                <p className="text-[15px] font-medium text-foreground/80 leading-relaxed mb-8">
-                  {project.stack.join(" · ")}
-                </p>
-
-                {/* Conditional Demo Button */}
-                {/* Conditional Demo Button */}
-                {project.demoLink && (
+              {/* Conditional Demo Button */}
+              {project.demoLink && (
                 <a 
-                    href={project.demoLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex h-12 items-center justify-center rounded-full px-6 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-sm gap-2 transition-transform hover:scale-105 w-max mt-4"
+                  href={project.demoLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex h-11 items-center justify-center rounded-full px-6 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-sm shadow-xs gap-2 transition-transform hover:scale-105 shrink-0"
                 >
-                    <ExternalLink className="h-4 w-4" />
-                    Live demo
+                  <ExternalLink className="h-4 w-4" />
+                  Live demo
                 </a>
-                )}
-              </div>
-              
+              )}
+
             </div>
           </div>
         ))}
