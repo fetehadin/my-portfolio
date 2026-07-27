@@ -11,7 +11,7 @@ export default function About() {
   ];
 
   return (
-    <section className="py-16 max-w-5xl mx-auto w-full px-4">
+    <section id="about" className="py-16 max-w-5xl mx-auto w-full px-4">
       {/* Top Layout: Profile Image + Bio */}
       <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
         
@@ -19,7 +19,7 @@ export default function About() {
         <div className="relative flex-shrink-0">
           <div className="relative h-72 w-72 sm:h-80 sm:w-80 overflow-hidden rounded-3xl bg-card border border-border shadow-sm">
             <Image
-              src="/portfolio-image.jpg" // Add your image to public/profile.jpg
+              src="/portfolio-image.jpg" 
               alt="Fetehadin Negash"
               fill
               className="object-cover"

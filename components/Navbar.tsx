@@ -1,15 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
-  // useEffect only runs on the client, so now we can safely show the UI
-  // This prevents the "hydration mismatch" error when loading the theme icon
   React.useEffect(() => {
     setMounted(true);
   }, []);
@@ -26,8 +23,8 @@ export default function Navbar() {
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/70">
         <a href="#about" className="hover:text-foreground transition-colors">About</a>
         <a href="#experience" className="hover:text-foreground transition-colors">Experience</a>
+        <a href="#education" className="hover:text-foreground transition-colors">Education</a>
         <a href="#projects" className="hover:text-foreground transition-colors">Projects</a>
-        <a href="#blogs" className="hover:text-foreground transition-colors">Blogs</a>
         <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
       </div>
 
@@ -37,18 +34,28 @@ export default function Navbar() {
         className="flex h-9 w-9 items-center justify-center rounded-full border border-border/50 bg-background/50 text-foreground transition-all hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary/50"
         aria-label="Toggle theme"
       >
-        {/* Only render the icons after the component has mounted on the client */}
         {mounted ? (
           theme === "dark" ? (
-            <Moon className="h-[18px] w-[18px]" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           ) : (
-            <Sun className="h-[18px] w-[18px]" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
           )
         ) : (
-          <div className="h-[18px] w-[18px]" /> // Empty placeholder to prevent layout shift
+          <div className="h-[18px] w-[18px]" />
         )}
       </button>
-
     </nav>
   );
 }

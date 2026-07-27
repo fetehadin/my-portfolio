@@ -35,7 +35,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-16 max-w-4xl mx-auto w-full px-4">
+    <section id="experience" className="py-16 max-w-4xl mx-auto w-full px-4">
       
       {/* Section Header */}
       <div className="mb-12 flex flex-col items-start text-left">

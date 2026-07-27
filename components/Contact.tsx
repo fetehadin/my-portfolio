@@ -2,7 +2,7 @@ import { Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <footer className="w-full bg-[#F2EFE9] dark:bg-[#161211] py-24 px-6 md:px-12 border-t border-border/40">
+    <footer id="contact" className="w-full bg-[#F2EFE9] dark:bg-[#161211] py-24 px-6 md:px-12 border-t border-border/40">
       <div className="max-w-5xl mx-auto w-full">
         
         {/* Top Grid: Connect text and Contact Info */}

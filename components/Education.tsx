@@ -3,7 +3,7 @@ import { GraduationCap, Award } from "lucide-react";
 export default function Education() {
   const education = [
     {
-      school: "Addis Ababa University",
+      school: "Hilcoe School of Computer Science and Technology",
       degree: "Bachelor of Science, Software Engineering",
       date: "2020 – 2025",
       badges: [
@@ -46,7 +46,7 @@ export default function Education() {
   ];
 
   return (
-    <section className="py-16 max-w-4xl mx-auto w-full px-4 space-y-20">
+    <section id="education" className="py-16 max-w-4xl mx-auto w-full px-4 space-y-20">
       
       {/* --------------------------- */}
       {/* EDUCATION SECTION           */}
