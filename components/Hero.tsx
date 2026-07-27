@@ -1,6 +1,28 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { ArrowDownCircle, Folder } from "lucide-react";
 
+// The 4 phrases rotating seamlessly (including AI-driven thinking and smart automation)
+const PHRASES = [
+  "Scalable Systems",
+  "Smart Automation",
+  "AI-Driven Logic",
+  "Digital Solutions"
+];
+
 export default function Hero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Set up the timer to change the phrase every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % PHRASES.length);
+    }, 2000); // 3000 milliseconds = .5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative flex flex-col items-center justify-center pt-32 pb-16 text-center max-w-4xl mx-auto">
       
@@ -14,24 +36,31 @@ export default function Hero() {
       </div>
 
       {/* 2. Main Headline */}
-      <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl leading-tight">
+      <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-5xl md:text-7xl leading-tight">
         Building Tomorrow's <br className="hidden sm:block" />
-        <span className="inline-block rounded-2xl bg-primary px-6 py-2 text-primary-foreground mt-2 mb-2 shadow-sm">
-          Scalable Systems
-        </span>{" "}
+        
+        {/* Rotating Text Container with fixed height to prevent layout shift */}
+        <div className="h-[70px] sm:h-[90px] flex items-center justify-center">
+          <span 
+            key={PHRASES[currentIndex]}
+            className="inline-block rounded-2xl bg-primary px-6 py-2 text-primary-foreground shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out"
+          >
+            {PHRASES[currentIndex]}
+          </span>
+        </div>
+        
         Today
       </h1>
 
       {/* 3. Biography / Narrative */}
-      <p className="mt-8 max-w-3xl text-lg leading-relaxed text-foreground/70 md:text-xl">
-        I'm <strong className="font-semibold text-foreground">Fetehadin Negash</strong>, a Software Engineering student 
-        specializing in full-stack web applications. From leveraging my civil engineering background to map out complex architectural logic, to building efficient Django and React platforms, I turn technical challenges into elegant, impactful digital experiences.
+      <p className="mt-6 max-w-3xl text-lg leading-relaxed text-foreground/70 md:text-xl">
+        I'm <strong className="font-semibold text-foreground">Fetehadin Negash</strong>, a full-stack Software Engineer who bridges the gap between structural design and digital innovation. Drawing on my background in civil engineering, I architect complex, scalable logic and bring it to life through robust, end-to-end software solutions. I specialize in transforming intricate technical challenges into elegant, high-performing digital experiences.
       </p>
 
       {/* 4. Custom Action Buttons */}
       <div className="mt-12 flex flex-col sm:flex-row items-center gap-6">
         
-        {/* Primary View Work Button -> Links to Projects Section */}
+        {/* Primary View Work Button */}
         <a 
           href="#projects"
           className="inline-flex h-14 items-center justify-center rounded-full px-8 text-lg bg-primary hover:bg-primary/90 text-primary-foreground font-medium shadow-md gap-2 transition-transform hover:scale-105"
@@ -40,7 +69,7 @@ export default function Hero() {
           <ArrowDownCircle className="h-5 w-5" />
         </a>
         
-        {/* Secondary Resume Button with Subtitle -> Links to Google Drive */}
+        {/* Secondary Resume Button */}
         <a 
           href="https://drive.google.com/file/d/1x4ufUJwkGJvEVSNyZelK7bewLmZdskcr/view?usp=sharing"
           target="_blank"

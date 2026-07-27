@@ -3,9 +3,9 @@ import { GraduationCap, Award } from "lucide-react";
 export default function Education() {
   const education = [
     {
-      school: "Hilcoe School of Computer Science and Technology",
+      school: "HiLCoE School of Computer Science and Technology",
       degree: "Bachelor of Science, Software Engineering",
-      date: "2020 – 2025",
+      date: "2023 – Present",
       badges: [
         "System Design",
         "Data Structures",
@@ -13,37 +13,75 @@ export default function Education() {
         "Software Architecture",
       ],
       description:
-        "Studied software engineering principles, algorithms, data structures, database systems, software architecture, operating systems, and system design. Developed strong analytical, problem-solving, and software development skills through academic projects and practical implementations.",
+        "Pursuing a Bachelor's degree in Software Engineering with a focus on software architecture, system design, algorithms, databases, and full-stack application development. Applying theoretical concepts through hands-on projects to build scalable, maintainable, and user-centered software solutions.",
+    },
+    {
+      school: "Addis Ababa University",
+      degree: "Bachelor of Science, Civil & Environmental Engineering",
+      date: "2021 – Present",
+      badges: [
+        "Structural Analysis",
+        "Transportation",
+        "Hydraulics",
+        "Geotechnics",
+      ],
+      description:
+        "Pursuing a Bachelor's degree in Civil & Environmental Engineering, developing expertise in structural engineering, transportation systems, geotechnical engineering, hydraulics, and sustainable infrastructure. Strengthened analytical thinking, engineering design, and quantitative problem-solving through rigorous coursework and practical projects.",
     },
     {
       school: "Hayrenzi Special Secondary School",
       degree: "High School Diploma",
       date: "2011 E.C. – 2014 E.C.",
       badges: [],
-      description: "",
+      description:
+        "Graduated from one of Ethiopia's government boarding schools for high-achieving students, where a rigorous academic environment fostered discipline, leadership, independent learning, and a strong foundation in mathematics and science.",
     },
   ];
 
   const certificates = [
-    {
-      title: "INSA Cyber Talent Program",
-      date: "August 2025 – October 2025",
-      description:
-        "Completed advanced training in software development, cybersecurity fundamentals, and technology-driven problem solving.",
-    },
-    {
-      title: "Nexus Bootcamp – Data Structures & Algorithms",
-      date: "June 2025 – September 2025",
-      description:
-        "Developed advanced problem-solving skills through intensive study of algorithms, complexity analysis, linked lists, stacks, queues, sorting algorithms, and two-pointer approaches.",
-    },
-    {
-      title: "Nexus Bootcamp – Frontend Development",
-      date: "September 2025 – October 2025",
-      description:
-        "Acquired practical experience with JavaScript, HTML, CSS, and modern frontend development workflows.",
-    },
-  ];
+  {
+    title: "ALX Backend Software Engineering",
+    date: "August 2024 – January 2025",
+    description:
+      "Successfully completed ALX's intensive backend software engineering program, building production-ready applications and mastering industry-standard software engineering practices.",
+  },
+  {
+    title: "ALX Career Essentials",
+    date: "2024",
+    description:
+      "Completed career readiness training focused on professional communication, leadership, collaboration, networking, personal branding, and interview preparation.",
+  },
+  {
+    title: "INSA Summer Tech Camp",
+    date: "July 2025 – October 2025",
+    description:
+      "Completed the Information Network Security Administration (INSA) Summer Tech Camp, gaining hands-on experience in full-stack software development through an intensive industry-focused building challenge.",
+  },
+  {
+    title: "Nexus Bootcamp – Data Structures & Algorithms",
+    date: "June 2025 – September 2025",
+    description:
+      "Strengthened algorithmic thinking and problem-solving through intensive training in data structures, algorithms, complexity analysis, and coding interview patterns.",
+  },
+  {
+    title: "Nexus Bootcamp – Frontend Development",
+    date: "September 2025 – October 2025",
+    description:
+      "Built responsive web applications using modern frontend technologies while applying best practices for UI development and user experience.",
+  },
+  {
+    title: "Udacity – Fundamentals of Programming",
+    date: "January 2025",
+    description:
+      "Completed foundational training in programming concepts, problem-solving, and software development using Python and modern development practices.",
+  },
+  {
+    title: "ALX Appreciation Letter",
+    date: "2025",
+    description:
+      "Received an appreciation letter from ALX Africa in recognition of mentoring fellow learners and supporting frontend development activities within the community.",
+  },
+];
 
   return (
     <section id="education" className="py-16 max-w-4xl mx-auto w-full px-4 space-y-20">

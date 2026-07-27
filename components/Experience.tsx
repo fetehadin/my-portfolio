@@ -5,32 +5,48 @@ export default function Experience() {
     {
       company: "Ethiopian Artificial Intelligence Institute",
       role: "Data Encoder",
-      date: "August 2025 – Present",
+      date: "August 2025 – December 2025",
       location: "Addis Ababa, Ethiopia",
       type: "On-site · Full-time",
       description:
-        "Contributing to national artificial intelligence initiatives by preparing, validating, and structuring large-scale datasets. My core focus is on ensuring absolute data integrity, consistency, and accuracy—forming the critical foundation required for training and evaluating advanced machine learning models. This role demands deep analytical problem-solving and meticulous quality assurance to support impactful AI technologies.",
+        "Participated in a national AI project, where meticulous attention to detail and rigorous data validation were essential to building reliable datasets for machine learning models.",
       skills: ["Data Quality", "Machine Learning", "Artificial Intelligence", "Analytical Thinking"],
     },
     {
-      company: "INSA Talent Center (EduConnect Project)",
-      role: "Backend Developer",
+      company: "INSA | Information Network Security Administration",
+      role: "Team Lead & Full-Stack Developer",
       date: "July 2025 – October 2025",
       location: "Addis Ababa, Ethiopia",
-      type: "On-site · Project",
+      type: "On-site · Summer Tech Camp",
       description:
-        "Spearheaded the backend engineering for a comprehensive, student-centered educational platform. I was responsible for translating formal software requirements into robust architecture, designing complex relational databases with detailed ERDs, and building highly scalable RESTful APIs. I implemented secure user management and core engagement features while collaborating seamlessly in an Agile environment.",
-      skills: ["Python", "Django", "PostgreSQL", "REST APIs", "System Design"],
+        "Led a multidisciplinary team during the 4-month INSA Summer Tech Camp building challenge to develop EduConnect, a full-stack educational platform. Designed the backend architecture while collaborating on frontend development to deliver a scalable solution.",
+      skills: [
+        "Python",
+        "Django",
+        "JavaScript",
+        "PostgreSQL",
+        "REST APIs",
+        "Team Leadership"
+      ],
     },
     {
-      company: "ALX",
+      company: "ALX Africa",
       role: "Backend Developer Trainee",
       date: "August 2024 – January 2025",
       location: "Remote",
-      type: "Remote · Intensive Training",
+      type: "Remote · Intensive Program",
       description:
-        "Completed a rigorous, production-oriented backend engineering program. I architected and deployed a complete Library Management System API using Django REST Framework, implementing secure CRUD operations and highly optimized database queries. I actively participated in code reviews, technical discussions, and collaborative Agile workflows, solidifying my expertise in modern software development lifecycles.",
-      skills: ["Django REST Framework", "SQL", "Agile", "Clean Architecture", "Git"],
+        "Completed ALX's intensive, project-based backend engineering program, gaining hands-on experience building production-ready applications while solving real-world software engineering challenges. Collaborated with peers, received mentorship from experienced engineers, and strengthened technical, problem-solving, and professional skills in an industry-focused environment.",
+      skills: [
+        "Python",
+        "Django",
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "SQL",
+        "MongoDB",
+        "Git"
+      ],
     },
   ];
 

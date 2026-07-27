@@ -4,9 +4,9 @@ import { Folder, Mail } from "lucide-react";
 
 export default function About() {
   const stats = [
-    { value: "2+", label: "YEARS OF CODING" },
-    { value: "15+", label: "PROJECTS DELIVERED" },
-    { value: "100+", label: "DSA PROBLEMS SOLVED" },
+    { value: "3+", label: "YEARS OF CODING" },
+    { value: "10+", label: "PROJECTS DELIVERED" },
+    { value: "5+", label: "INTERNSHIPS & PROGRAMS" },
     { value: "∞", label: "LINES OF CODE WRITTEN" },
   ];
 
@@ -19,7 +19,7 @@ export default function About() {
         <div className="relative flex-shrink-0">
           <div className="relative h-72 w-72 sm:h-80 sm:w-80 overflow-hidden rounded-3xl bg-card border border-border shadow-sm">
             <Image
-              src="/portfolio-image.jpg" 
+              src="/fetehadin-image.jpg" 
               alt="Fetehadin Negash"
               fill
               className="object-cover"
@@ -45,27 +45,29 @@ export default function About() {
           </h2>
 
           {/* Narrative Paragraphs */}
+          <p className="text-foreground/70 leading-relaxed text-base mb-4">
+            Transitioning from civil engineering to software development gave me a unique blueprint for building software: I treat code the same way I treat physical infrastructure—designing for structural integrity, load management, and long-term scalability. 
+          </p>
           <p className="text-foreground/70 leading-relaxed text-base">
-            A dedicated Software Engineering student with a background in Civil Engineering. I bring structured, multi-dimensional problem-solving into software development, focusing on crafting scalable backend systems and robust web applications.
+            Today, I focus on transforming complex challenges into efficient backend logic, smart automation, and high-performing digital solutions that drive real-world impact.
           </p>
 
-          <p className="text-foreground/70 leading-relaxed text-base">
-            Currently specializing in full-stack architecture using <strong className="text-foreground font-semibold">Python, Django, PostgreSQL, and Next.js</strong>, while maintaining a strong focus on Data Structures, Algorithms, and clean code.
-          </p>
+          
 
           {/* Action Buttons */}
           <div className="mt-4 flex flex-wrap items-center gap-4">
-            <Button
-              size="lg"
-              variant="outline"
-              className="rounded-full px-6 py-6 border-border bg-card hover:bg-card/80 shadow-sm flex items-center gap-3"
+            <a 
+              href="https://drive.google.com/file/d/1x4ufUJwkGJvEVSNyZelK7bewLmZdskcr/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-14 items-center justify-center rounded-full px-8 border border-border bg-card hover:bg-card/80 shadow-sm gap-4 transition-transform hover:scale-105"
             >
-              <Folder className="h-5 w-5 text-primary" fill="currentColor" />
+              <Folder className="h-6 w-6 text-primary" fill="currentColor" />
               <div className="flex flex-col items-start text-left">
-                <span className="font-semibold text-foreground text-sm leading-none">Download CV</span>
-                <span className="text-[10px] text-foreground/60 leading-tight">Click anywhere to open</span>
+                <span className="font-semibold text-foreground leading-tight text-base">Download cv</span>
+                <span className="text-xs text-foreground/60 leading-tight">Click anywhere to open</span>
               </div>
-            </Button>
+            </a>
 
             <Button
               size="lg"
@@ -73,7 +75,7 @@ export default function About() {
               className="rounded-full px-6 py-6 border-border bg-card hover:bg-card/80 shadow-sm flex items-center gap-2 font-medium"
             >
               <Mail className="h-4 w-4 text-foreground/70" />
-              Get in Touch
+              <a href="#contact" className="hover:text-foreground transition-colors">Get in Touch</a>
             </Button>
           </div>
 
