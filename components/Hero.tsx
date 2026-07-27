@@ -43,7 +43,7 @@ export default function Hero() {
         <div className="h-[70px] sm:h-[90px] flex items-center justify-center">
           <span 
             key={PHRASES[currentIndex]}
-            className="inline-block rounded-2xl bg-primary px-6 py-2 text-primary-foreground shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out"
+            className="inline-block rounded-2xl bg-primary px-2 my-10 text-primary-foreground shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out"
           >
             {PHRASES[currentIndex]}
           </span>

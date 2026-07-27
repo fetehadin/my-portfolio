@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Main constrained content */}
       <Navbar />
-      <main className="flex-1 flex flex-col items-center justify-center p-4 md:p-12 max-w-7xl mx-auto w-full space-y-16 md:space-y-24 overflow-hidden">
+      <main className="flex-1 flex flex-col items-center justify-center p-2 md:p-6 max-w-7xl mx-auto w-full space-y-6 md:space-y-4 overflow-hidden">
         
         <Hero />
         <About />

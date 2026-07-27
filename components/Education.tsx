@@ -84,7 +84,7 @@ export default function Education() {
 ];
 
   return (
-    <section id="education" className="py-16 max-w-4xl mx-auto w-full px-4 space-y-20">
+    <section id="education" className="py-10 max-w-4xl mx-auto w-full px-4 space-y-20">
       
       {/* --------------------------- */}
       {/* EDUCATION SECTION           */}

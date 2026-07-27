@@ -51,7 +51,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-16 max-w-4xl mx-auto w-full px-4">
+    <section id="experience" className="py-6 max-w-4xl mx-auto w-full px-4">
       
       {/* Section Header */}
       <div className="mb-12 flex flex-col items-start text-left">
@@ -72,10 +72,7 @@ export default function Experience() {
             </p>
           </div>
           
-          {/* Optional: View All link mimicking the screenshot */}
-          <a href="#" className="hidden sm:flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors">
-            View All Experience <span className="text-lg">→</span>
-          </a>
+          
         </div>
       </div>
 

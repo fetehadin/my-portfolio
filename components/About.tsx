@@ -46,7 +46,7 @@ export default function About() {
 
           {/* Narrative Paragraphs */}
           <p className="text-foreground/70 leading-relaxed text-base mb-4">
-            Transitioning from civil engineering to software development gave me a unique blueprint for building software: I treat code the same way I treat physical infrastructure—designing for structural integrity, load management, and long-term scalability. 
+            Transitioning from civil engineering to software development gave me a unique blueprint for building software: I treat code the same way I treat physical infrastructure, designing for structural integrity, load management, and long-term scalability. 
           </p>
           <p className="text-foreground/70 leading-relaxed text-base">
             Today, I focus on transforming complex challenges into efficient backend logic, smart automation, and high-performing digital solutions that drive real-world impact.

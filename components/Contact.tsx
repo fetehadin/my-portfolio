@@ -2,18 +2,17 @@ import { Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <footer id="contact" className="w-full bg-[#F2EFE9] dark:bg-[#161211] py-24 px-6 md:px-12 border-t border-border/40">
+    <footer id="contact" className="w-full bg-[#F2EFE9] dark:bg-[#161211] py-12 px-6 md:px-12 border-t border-border/40">
       <div className="max-w-5xl mx-auto w-full">
         
         {/* Top Grid: Connect text and Contact Info */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 mb-24 items-start">
-          
           {/* Left Column: Heading */}
           <div className="flex flex-col items-start text-left min-w-0">
             <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary mb-6">
               Let's Connect
             </h5>
-            <h2 className="text-2xl sm:text-5xl md:text-4xl font-extrabold tracking-tight text-foreground mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-6 leading-tight">
               Ready to bring your <br className="hidden sm:block" />
               next <span className="font-serif italic text-primary">vision</span> to life?
             </h2>
@@ -67,7 +66,7 @@ export default function Contact() {
           <div className="flex flex-wrap justify-center items-center gap-4">
             <SocialLink href="https://github.com/fetehadin" icon={<GithubIcon />} />
             <SocialLink href="https://www.linkedin.com/in/fetehadin/" icon={<LinkedinIcon />} />
-            <SocialLink href="https://www.upwork.com/freelancers/~01b61e360dca665f80" icon={<UpworkIcon />} />
+            <SocialLink href="https://t.me/Fete64" icon={<TelegramIcon />} />
             <SocialLink href="mailto:fetehadinnegash@gmail.com" icon={<Send className="h-5 w-5" />} />
           </div>
         </div>
@@ -118,10 +117,17 @@ function LinkedinIcon() {
   );
 }
 
-function UpworkIcon() {
+function TelegramIcon() {
   return (
-    <svg role="img" viewBox="0 0 24 24" fill="currentColor" className="h-[22px] w-[22px]" xmlns="http://www.w3.org/2000/svg">
-      <path d="M17.48 6.06c-2.4 0-4.39 1.58-5.11 3.76-.79-1.57-1.46-3.26-1.92-5.04l-2.61.54c.42 1.63 1.05 3.2 1.83 4.67L7.4 14.12c-.52.54-1.23.86-1.99.86-1.54 0-2.8-1.25-2.8-2.8s1.26-2.8 2.8-2.8c.45 0 .89.11 1.28.32l1.13-2.33c-.72-.38-1.54-.58-2.41-.58-2.76 0-5 2.24-5 5s2.24 5 5 5c1.47 0 2.79-.64 3.7-1.65l2.09-3.9c1.07 1.56 2.5 2.91 4.2 3.96l1.35-2.22c-1.39-.83-2.58-1.93-3.48-3.23.59-1.32 1.76-2.29 3.21-2.29 1.48 0 2.68 1.2 2.68 2.68s-1.2 2.68-2.68 2.68c-.68 0-1.33-.26-1.83-.73l-1.6 2.05c.95.83 2.17 1.28 3.43 1.28 2.93 0 5.3-2.38 5.3-5.31 0-2.93-2.37-5.31-5.3-5.31z"/>
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="h-[22px] w-[22px]"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Telegram"
+    >
+      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zm5.55 8.531-1.97 9.294c-.148.658-.533.82-1.08.51l-2.986-2.203-1.44 1.387c-.159.159-.293.293-.6.293l.213-3.054 5.56-5.022c.242-.213-.054-.333-.373-.12l-6.872 4.326-2.96-.924c-.64-.203-.654-.64.135-.947l11.57-4.46c.538-.196 1.006.128.803.92z" />
     </svg>
   );
 }

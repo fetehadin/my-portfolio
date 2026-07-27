@@ -28,7 +28,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16 max-w-5xl mx-auto w-full px-4">
+    <section id="projects" className="py-8 max-w-5xl mx-auto w-full px-4">
       
       {/* Section Header */}
       <div className="mb-16 flex flex-col items-start text-left">
