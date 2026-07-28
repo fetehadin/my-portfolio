@@ -54,7 +54,7 @@ export default function Hero() {
 
       {/* 3. Biography / Narrative */}
       <p className="mt-6 max-w-3xl text-lg leading-relaxed text-foreground/70 md:text-xl">
-        I'm <strong className="font-semibold text-foreground">Fetehadin Negash</strong>, a full-stack Software Engineer who bridges the gap between structural design and digital innovation. Drawing on my background in civil engineering, I architect complex, scalable logic and bring it to life through robust, end-to-end software solutions. I specialize in transforming intricate technical challenges into elegant, high-performing digital experiences.
+        I'm <strong className="font-semibold text-foreground">Fetehadin Negash</strong>, a full-stack Software Engineer who bridges the gap between structural design and digital innovation. Drawing  on my background in civil engineering, I architect complex, scalable logic and bring it to life through robust, end-to-end software solutions. I specialize in transforming intricate technical challenges into elegant, high-performing digital experiences.
       </p>
 
       {/* 4. Custom Action Buttons */}
