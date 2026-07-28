@@ -71,7 +71,7 @@ export default function Hero() {
         
         {/* Secondary Resume Button */}
         <a 
-          href="https://docs.google.com/document/d/1wCecYXraWBCYTeejQqOwtNaX97f4Bd-Gxf-zS-8dmSU/edit?usp=sharing"
+          href="https://drive.google.com/file/d/1HBvlOeg1si_HJ9zASuvfW6hPb1CppOVx/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex h-14 items-center justify-center rounded-full px-8 border border-border bg-card hover:bg-card/80 shadow-sm gap-4 transition-transform hover:scale-105"
